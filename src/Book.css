@@ -1,0 +1,23 @@
+.book-container {
+  display: flex;
+  flex-direction: column;
+}
+.book-container > h2 {
+  font-size: 2.5rem;
+}
+.booklist {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.book {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #222;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
