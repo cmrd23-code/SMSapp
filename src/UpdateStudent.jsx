@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
-
+const apiUrl = import.meta.env.VITE_API_URL;
 const UpdateStudent = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ const UpdateStudent = () => {
 
   useEffect(() => {
     axios
-      .get(`https://smsbackend-amv6.onrender.com/api/students/${id}`)
+      .get(`${apiUrl}/api/students/${id}`)
       .then((res) => setStudent(res.data))
       .catch((err) => console.log(err));
   }, [id]);
@@ -31,7 +31,7 @@ const UpdateStudent = () => {
 
     try {
       await axios.put(
-        `https://smsbackend-amv6.onrender.com/api/students/${id}`,
+        ``${apiUrl}/api/students/${id}``,
         student,
       );
 
