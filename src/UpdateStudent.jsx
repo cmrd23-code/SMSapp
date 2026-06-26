@@ -31,7 +31,7 @@ const UpdateStudent = () => {
 
     try {
       await axios.put(
-        ``${apiUrl}/api/students/${id}``,
+        `${apiUrl}/api/students/${id}`,
         student,
       );
 
