@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import AddStudent from "./AddStudent";
 import { useNavigate } from "react-router-dom";
-
+const apiUrl = import.meta.env.VITE_API_URL;
 const FetchDataGrid = () => {
   const [users, setUsers] = useState([]);
   const navigator = useNavigate();
@@ -11,7 +11,7 @@ const FetchDataGrid = () => {
     try {
       //const response = await axios.get("http://localhost:8080/studentsDb");
       const response = await axios.get(
-        "https://smsbackend-amv6.onrender.com/api/students",
+        `${apiUrl}/api/students`,
       );
       setUsers(response.data);
     } catch (error) {
@@ -28,7 +28,7 @@ const FetchDataGrid = () => {
     if (window.confirm("Are you sure you want to delete this record?")) {
       try {
         await axios.delete(
-          `https://smsbackend-amv6.onrender.com/api/students/${id}`,
+          `${apiUrl}/api/students/${id}`,
         );
         fetchData(); // Refresh grid
       } catch (error) {
