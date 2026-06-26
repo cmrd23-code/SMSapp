@@ -39,10 +39,10 @@ const FetchDataGrid = () => {
 
   // Update record
   const handleUpdate = (id) => {
-    navigator(`/SMSapp/update/${id}`);
+    navigator(`/update/${id}`);
   };
   function addNewStudent() {
-    navigator("/SMSapp/addstudents");
+    navigator("/addstudents");
   }
   return (
     <div className="container mt-5">
