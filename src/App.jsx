@@ -13,6 +13,8 @@ import ContactUs from "./ContactUs";
 import { Home } from "./Home";
 import AddStudent from "./AddStudent";
 import FooterComponent from "./FooterComponent";
+import UpdateStudent from "./UpdateStudent";
+import AboutUs from "./AboutUs";
 function App() {
   const topic = "react";
   return (
@@ -20,12 +22,13 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/users" element={<FetchDataGrid />} />
-        <Route path="/products" element={<BookComponent />} />
-        <Route path="/about" element={<FetchData />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/addstudents" element={<AddStudent />} />
+        <Route path="/SMSapp/" element={<Home />} />
+        <Route path="/SMSapp/users" element={<FetchDataGrid />} />
+        <Route path="SMSapp/products" element={<BookComponent />} />
+        <Route path="SMSapp/about" element={<AboutUs/>} />
+        <Route path="SMSapp/contact" element={<ContactUs />} />
+        <Route path="SMSapp/addstudents" element={<AddStudent />} />
+        <Route path="/SMSapp/update/:id" element={<UpdateStudent />} />
       </Routes>
       <FooterComponent />
     </BrowserRouter>

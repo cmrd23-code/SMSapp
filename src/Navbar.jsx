@@ -8,19 +8,19 @@ function Navbar() {
 
       <ul className="nav-links">
         <li>
-          <a href="/">Home</a>
+          <a href="/SMSapp/">Home</a>
         </li>
         <li>
-          <a href="/users">Students</a>
+          <a href="/SMSapp/users">Students</a>
         </li>
         <li>
-          <a href="/products">Products</a>
+          <a href="/SMSapp/products">Products</a>
         </li>
         <li>
-          <a href="/about">About</a>
+          <a href="/SMSapp/about">About</a>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <a href="/SMSapp/contact">Contact</a>
         </li>
       </ul>
     </nav>

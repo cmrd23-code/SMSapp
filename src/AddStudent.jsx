@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-const api_url = "http://localhost:8080/addStudents";
-
+//const api_url = "http://localhost:8080/addStudents";
+const api_url = "https://smsbackend-amv6.onrender.com/api/students";
 function AddStudent() {
   const navigater = useNavigate();
 
   const [student, setStudent] = useState({
     name: "",
-    marks: "",
+    email: "",
+    course: "",
   });
 
   const handleChange = (e) => {
@@ -33,7 +34,8 @@ function AddStudent() {
         alert("Student saved successfully!");
         setStudent({
           name: "",
-          marks: "",
+          email: "",
+          course: "",
         });
         navigater("/users");
       } else {
@@ -51,7 +53,12 @@ function AddStudent() {
 
       <form onSubmit={saveStudent}>
         <div className="mb-3">
-          <label className="form-label">Student Name</label>
+          <label
+            style={{ display: "block", textAlign: "left" }}
+            className="form-label"
+          >
+            Student Name
+          </label>
           <input
             className="form-control"
             type="text"
@@ -62,13 +69,34 @@ function AddStudent() {
           />
         </div>
         <div className="mb-3">
-          <label className="form-label">Marks</label>
+          <label
+            style={{ display: "block", textAlign: "left" }}
+            className="form-label"
+          >
+            Email
+          </label>
           <input
             className="form-control"
-            type="number"
-            name="marks"
-            placeholder="Enter Marks"
-            value={student.marks}
+            type="email"
+            name="email"
+            placeholder="Enter Email"
+            value={student.email}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="mb-3">
+          <label
+            style={{ display: "block", textAlign: "left" }}
+            className="form-label"
+          >
+            Course
+          </label>
+          <input
+            className="form-control"
+            type="text"
+            name="course"
+            placeholder="Enter Course"
+            value={student.course}
             onChange={handleChange}
           />
         </div>
