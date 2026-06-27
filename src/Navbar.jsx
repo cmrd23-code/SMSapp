@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="logo">Student Performance Tracker</div>
 
       <ul className="nav-links">
