@@ -28,7 +28,7 @@ export const book = [
     pages: 960,
     year_of_publication: 2021,
     isbn_13: "9780136764052",
-    image_url: b2,
+    image_url: b8,
   },
   {
     book_title: "Operating System Concepts",
@@ -38,7 +38,7 @@ export const book = [
     pages: 976,
     year_of_publication: 2018,
     isbn_13: "9781119456339",
-    image_url: "https://covers.openlibrary.org/b/isbn/9781119456339-L.jpg",
+    image_url: b2,
   },
   {
     book_title: "Artificial Intelligence: A Modern Approach",
@@ -48,7 +48,7 @@ export const book = [
     pages: 1152,
     year_of_publication: 2021,
     isbn_13: "9780134610993",
-    image_url: "https://covers.openlibrary.org/b/isbn/9780134610993-L.jpg",
+    image_url: b3,
   },
   {
     book_title: "Database System Concepts",
@@ -58,7 +58,7 @@ export const book = [
     pages: 1376,
     year_of_publication: 2019,
     isbn_13: "9781260084504",
-    image_url: "https://covers.openlibrary.org/b/isbn/9781260084504-L.jpg",
+    image_url: b9,
   },
   {
     book_title: "Clean Code",
@@ -68,7 +68,7 @@ export const book = [
     pages: 464,
     year_of_publication: 2008,
     isbn_13: "9780132350884",
-    image_url: "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg",
+    image_url: b4,
   },
   {
     book_title: "Computer Organization and Design",
@@ -78,7 +78,7 @@ export const book = [
     pages: 784,
     year_of_publication: 2021,
     isbn_13: "9780128201091",
-    image_url: "https://covers.openlibrary.org/b/isbn/9780128201091-L.jpg",
+    image_url: ,
   },
   {
     book_title: "Compilers: Principles, Techniques, and Tools",
@@ -88,7 +88,7 @@ export const book = [
     pages: 1000,
     year_of_publication: 2006,
     isbn_13: "9780321486813",
-    image_url: "https://covers.openlibrary.org/b/isbn/9780321486813-L.jpg",
+    image_url: b7,
   },
   {
     book_title: "The C Programming Language",
@@ -98,7 +98,7 @@ export const book = [
     pages: 288,
     year_of_publication: 1988,
     isbn_13: "9780131103627",
-    image_url: "https://covers.openlibrary.org/b/isbn/9780131103627-L.jpg",
+    image_url: b6,
   },
   {
     book_title: "Data Structures and Algorithm Analysis in C++",
@@ -108,6 +108,6 @@ export const book = [
     pages: 624,
     year_of_publication: 2014,
     isbn_13: "9780132847377",
-    image_url: "https://covers.openlibrary.org/b/isbn/9780132847377-L.jpg",
+    image_url: b5,
   },
 ];
