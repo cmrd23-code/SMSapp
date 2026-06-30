@@ -1,3 +1,13 @@
+import b1 from "./coremen.jpg";
+import b2 from "./galvin.jpg";
+import b3 from "./Russel.jpg";
+import b4 from "./cleanCode.jpg";
+import b5 from "./DS_markAllenVeiss.jpg";
+import b6 from "./DennisRitchie.jpg";
+import b7 from "./compiler_Ahho.jpg";
+import b8 from "./CN_Tanenbaum.jpg";
+import b9 from "./DBMS_korth.jpg";
+
 export const book = [
   {
     book_title: "Introduction to Algorithms",
@@ -8,7 +18,7 @@ export const book = [
     pages: 1312,
     year_of_publication: 2022,
     isbn_13: "9780262046305",
-    image_url: "https://covers.openlibrary.org/b/isbn/9780262046305-L.jpg",
+    image_url: b1,
   },
   {
     book_title: "Computer Networks",
@@ -18,7 +28,7 @@ export const book = [
     pages: 960,
     year_of_publication: 2021,
     isbn_13: "9780136764052",
-    image_url: "https://covers.openlibrary.org/b/isbn/9780136764052-L.jpg",
+    image_url: b2,
   },
   {
     book_title: "Operating System Concepts",
